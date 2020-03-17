@@ -18,40 +18,50 @@ module.exports = {
                 text: '分类',
                 ariaLabel: '分类',
                 items: [
-                    { text: '看代码', link: '/pages/code/js.md' },
-                    { text: '学英语', link: '/pages/english/one.md' },
+                    { text: 'Coding', link: '/pages/code/js.md' },
+                    { text: 'Devops', link: '/pages/devops/automation.md' },
+                    { text: 'English', link: '/pages/english/one.md' },
                 ]
             },
-            // { text: '功能演示', link: '/pages/folder1/test3.md' },
-            { text: 'Github', link: 'https://github.com/yiyi-an/yiyi-an.github.io' },
+            { text: 'Github', link: 'https://github.com/yiyi-an/' },
         ],
         sidebar: {
-            '/pages/code/':[
-                {
-                    title: 'Coding',   // 必要的
-                    collapsable: false, // 可选的, 默认值是 true,
-                    sidebarDepth: 1,    // 可选的, 默认值是 1
-                    children: [
-                        ['http.md', 'HTTP'],
-                        ['htmlcss.md', 'HTML/CSS'],
-                        ['js.md', 'Javascript'],
-                        ['vue.md', 'Vue'],
-                        ['node.md', 'Node'],
-                        ['webpack.md', 'Webpack'],
-                        ['wxdev.md', '微信开发'],
-                        ['PAP.md', '项目实际问题'],
-                    ]
-                }
-            ],
-            '/pages/english/':[
+          '/pages/code/':[
               {
-                  title: 'learn English',   // 必要的
+                  title: '代码笔记',   // 必要的
                   collapsable: false, // 可选的, 默认值是 true,
-                  sidebarDepth: 1,    // 可选的, 默认值是 1
+                  sidebarDepth: 2,    // 可选的, 默认值是 1
                   children: [
-                      ['one.md', '基础语法'],
+                      ['http.md', 'HTTP'],
+                      ['htmlcss.md', 'HTML/CSS'],
+                      ['js.md', 'Javascript'],
+                      ['vue.md', 'Vue'],
+                      ['node.md', 'Node'],
+                      ['webpack.md', 'Webpack'],
+                      ['wxdev.md', '微信开发'],
+                      ['PAP.md', '项目实际问题'],
                   ]
               }
+          ],
+          '/pages/devops/':[
+            {
+                title: '进击全栈',   // 必要的
+                collapsable: false, // 可选的, 默认值是 true,
+                sidebarDepth: 1,    // 可选的, 默认值是 1
+                children: [
+                    ['automation.md', 'vue+docker自动化构建'],
+                ]
+            }
+          ],
+          '/pages/english/':[
+            {
+                title: '学点啥',   // 必要的
+                collapsable: false, // 可选的, 默认值是 true,
+                sidebarDepth: 1,    // 可选的, 默认值是 1
+                children: [
+                    ['one.md', '基础'],
+                ]
+            }
           ]
         }
     }
